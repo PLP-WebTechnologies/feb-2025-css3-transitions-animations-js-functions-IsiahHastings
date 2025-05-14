@@ -1,0 +1,56 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+.book-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #56b37f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #3c8d63;
+}
+
+.yoga-image-container {
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+#yogaImage {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+#yogaImage.animate {
+  animation: zoom 0.5s ease-out;
+}
+
+@keyframes zoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
